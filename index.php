@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 <?php
 include_once "includes/dbh.inc.php";
 ?>
+=======
+>>>>>>> d1e41865455f09faf3ab60248fcb919e83527fc5
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,6 +35,20 @@ include_once "includes/dbh.inc.php";
 
     ?>
 
+    <form action="includes/signup.inc.php" method="POST">
+        <input type="text" name="first" placeholder="firstName">
+        <br>
+        <input type="text" name="last" placeholder="lastName">
+        <br>
+        <input type="text" name="email" placeholder="email">
+        <br>
+        <input type="text" name="uid" placeholder="username">
+        <br>
+        <input type="password" name="pwd" placeholder="password">
+        <br>
+        <button type="submit" name="submit">Sign up</button>
+        <br>
+    </form>
 </body>
 
 </html>
