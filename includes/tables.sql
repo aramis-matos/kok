@@ -12,3 +12,5 @@ INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd)
 
 INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd)
     VALUES ('Daniela', 'Nielsen', "use@gmail.com", 'yeetus', 'test12');
+
+    
