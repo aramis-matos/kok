@@ -25,7 +25,7 @@ $valid_entries = verify_entries($args);
 
 
 
-if ($valid_entries == true) {
+if ($valid_entries) {
 
     $sql = "INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd) VALUES ('$args[0]', '$args[1]', '$args[2]', '$args[3]', '$args[4]');";
     mysqli_query($conn, $sql);
