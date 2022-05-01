@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-<?php
-include_once "includes/dbh.inc.php";
-?>
-=======
->>>>>>> d1e41865455f09faf3ab60248fcb919e83527fc5
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,25 +9,34 @@ include_once "includes/dbh.inc.php";
 </head>
 
 <body>
-
     <?php
 
-    $sql = "SELECT * FROM users;";
-    $result = mysqli_query($conn, $sql);
-    $resultCheck = mysqli_num_rows($result);
+    // $args_arr = array('first_name' => 'thingy', 'last_name' => '', 'email' => null, 'uid' => null, 'password' => null);
 
-
-    // while ($row = mysqli_fetch_assoc($result)) {
-    //     echo $row['user_uid'] . "<br>";
+    // if (verify_entries($args_arr))
+    // {
+    //     echo "do stuff\n";
+    // }
+    // else {
+    //     echo "don't do stuff\n";
     // }
 
 
-    for ($i = mysqli_fetch_assoc($result); $i ; $i = mysqli_fetch_assoc($result)) {
-        echo $i['user_uid'] . '<br>';
-    }
+    // function verify_entries($args_arr)
+    // {
+    //     $is_valid = true;
+    //     foreach ($args_arr as $key => $value) {
+    //         if ($value == null || $value == "") {
+    //             echo "Invalid input " . $key . "<br>";
+    //             $is_valid = false;
+    //         }
+    //     }
+
+    //     return $is_valid;
+    // }
+
 
     ?>
-
     <form action="includes/signup.inc.php" method="POST">
         <input type="text" name="first" placeholder="firstName">
         <br>
